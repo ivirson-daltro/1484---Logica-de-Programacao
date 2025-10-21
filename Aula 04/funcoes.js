@@ -1,6 +1,6 @@
-function somar(n1, n2) {
-  return n1 + n2;
-}
+// function somar(n1, n2) {
+//   return n1 + n2;
+// }
 
 function subtrair(n1, n2) {
   return n1 - n2;
@@ -14,19 +14,19 @@ function dividir(n1, n2) {
   return n1 / n2;
 }
 
-function calculadora(n1, n2, operacao) {
-  if (operacao === "soma") {
-    return somar;
-  } else if (operacao === "subtracao") {
-    return subtrair(n1, n2);
-  } else if (operacao === "multiplicacao") {
-    return multiplicar(n1, n2);
-  } else if (operacao === "divisao") {
-    return dividir(n1, n2);
-  } else {
-    return "Operação não permitida!";
-  }
-}
+// function calculadora(n1, n2, operacao) {
+//   if (operacao === "soma") {
+//     return somar;
+//   } else if (operacao === "subtracao") {
+//     return subtrair(n1, n2);
+//   } else if (operacao === "multiplicacao") {
+//     return multiplicar(n1, n2);
+//   } else if (operacao === "divisao") {
+//     return dividir(n1, n2);
+//   } else {
+//     return "Operação não permitida!";
+//   }
+// }
 
 // console.log(calculadora(2, 4, "multiplicacao"));
 
@@ -56,7 +56,7 @@ function calcular(n1, n2, fn) {
   return fn(n1, n2);
 }
 
-const result = calcular(5, 6, somar);
+// const result = calcular(5, 6, somar);
 // console.log(result);
 
 const arr = [1, 2, 3, 4, 5, 6];
@@ -91,4 +91,22 @@ function criaCalculadoraDesconto(taxa) {
 // const desconto10 = criaCalculadoraDesconto(0.1);
 // const precoComDesconto = desconto10(100);
 // console.log(precoComDesconto);
-console.log(criaCalculadoraDesconto(0.1)(100));
+// console.log(criaCalculadoraDesconto(0.1)(100));
+
+// arrow function
+// function somar(n1, n2) {
+//   return n1 + n2;
+// }
+
+// const somar = function (n1, n2) {
+//   return n1 + n2;
+// };
+
+// const somar = (n1, n2) => {
+//   // mais código implementado aqui
+//   return n1 + n2;
+// };
+
+const somar = (n1, n2) => n1 + n2;
+
+console.log(somar(1, 2));
